@@ -1,117 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy BirthDay</title>
-  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Jiji</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: rgb(41, 41, 41);
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    /* tombol hamburger */
-    .menu-btn {
-      cursor: pointer;
-      width: 90px;
-      margin: 20px;
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    /* side menu */
-    .menu {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.3s;
-      padding-top: 60px;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    .menu a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      display: block;
-    }
 
-    .menu a:hover {
-      background-color: #575757;
-    }
+    <link rel="stylesheet" href="dist/css/style.css">
 
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 30px;
-      color: white;
-      cursor: pointer;
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    /* ======= Bagian Foto dan Kotak Green ======= */
-    .image-container {
-      display: flex;
-      justify-content: center;  /* rata tengah secara horizontal */
-      align-items: center;      /* rata tengah secara vertikal */
-      gap: 20px;                /* jarak antara foto dan kotak */
-      margin-top: 60px;
-    }
+    <style>
+      * {
+    font-family: "poppins", sans-serif;
+}
 
-    .image-container img {
-      width: 300px;
-      height: 300px;
-      border-radius: 10px;
-      object-fit: cover; /* biar gambar tetap proporsional */
-    }
+.navbar i {
+    color: white;
+}
 
-    .green {
-      width: 300px;     /* sama dengan lebar foto */
-      height: 300px;    /* sama dengan tinggi foto */
-      background-color: skyblue;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      font-family: 'Italiana', serif;
-      border-radius: 10px;
-      text-decoration: none;
-    }
-  </style>
+.navbar i:hover{
+    cursor: pointer;
+}
+
+.hero {
+  background-color: rgb(94, 168, 198);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project img{
+    height: 250px;
+    cursor: pointer;
+}
+
+.project img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.navbar {
+    transition: 0.3s;
+}
+
+.scrolling-active{
+    background-color: skyblue;
+}
+
+.service i {
+    color: rgb(0, 160, 0);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.faq {
+  background-color: rgb(94, 168, 198);
+}
+
+.footer p {
+    color: grey;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: grey;
+}
+    </style>
+
+
 </head>
-
 <body>
-  <img src="ChatGPT Image 5 Okt 2025, 14.58.53.png" width="90" height="90" alt="Menu" class="menu-btn" onclick="openMenu()">
 
-  <div id="sideMenu" class="menu">
-    <span class="close-btn" onclick="closeMenu()">&times;</span>
-    <a href="index.html">kembali ke menu login</a> <br><br>
-    <a href="#home">made by Jahan for beloved friends</a>
-    <a href="#alasan">alasan gw buat ini biar kalian bisa buka jam 00:00 dan nganggap gw ucapin jam segitu soalnya gw udah jarang tidur malem</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: skyblue;">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#song" target="_self">Song</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#you">Y.O.U</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#character">Character</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">kembali ke menu login</a></li>
+            <li><a class="dropdown-item" href="#">made by Jahan for beloved friends</a></li>
+            <li><a class="dropdown-item" href="#">alasan gw buat ini biar kalian bisa buka jam 00:00 <br/> dan nganggap gw ucapin jam segitu soalnya gw udah jarang tidur malem</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
   </div>
+</nav>
 
-  <script>
-    function openMenu() {
-      document.getElementById("sideMenu").style.width = "250px";
-    }
-    function closeMenu() {
-      document.getElementById("sideMenu").style.width = "0";
-    }
-  </script>
+<div class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-light">
+                    <h1 class="fw-bold mb-4">Happy BirthDay For You Zia</h1>
+                    <p>Wish You All The Best.</p>
+                </div>
+            </div>
+        </div>
+     </div>
 
-  <!-- Bagian foto dan green -->
-  <div class="image-container">
-    <a href="Putih Biru Minimalis Presentasi Penelitian.png" target="_blank">
-      <img src="bakugo-3.webp" alt="zia bakugo">
-    </a>
-    <a href="https://open.spotify.com/intl-id/track/1NB6nvnMur615Ino2B1Lmo" class="green" target="_blank">Song That Remind Me Of You</a>
-    <a href="hakuji_koyuki.jpg" class="green" target="_blank">character That Remind Me Of You</a>
+     <div class="project" id="song">
+        <div class="container">
+            <div class="row">
+          <div class="col mt-5">
+            <h2 style="text-align: center;">Song That Remind Me Of You</h2>
+            <hr />
+          </div>
+          </div>
+            <div class="row row-cols-lg-2 row-cols-1">
+          <div class="col" style="align-items: center; justify-content: center; margin: auto; display: flex;">
+            
+            <img src="Screenshot 2026-01-14 182303.png" class="mt-5" style="align-items: center; justify-content: center; margin: auto; display: flex;" width="300px">
+          </div>
+          </div>
+        </div>
+     </div>
+
+     <div class="faq" id="you">
+      <div class="container text-light" style="padding-bottom: 30px;">
+        <div class="row" style="margin-top: 30px;">
+          <div class="col mt-5">
+            <h2 style="text-align: center;">Yap I Have For You</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col mt-5 mb-3">
+            <b style="text-align: center;">Happy BirthDay Gang,selamat ulang tahun Jiji thanks for accepting me in your life even know im some what an idiot, you know when i ask you about something at Sunday 11/1/2026 16:56 thanks for answering honestly but you know ill wait for you and i will grow myself too while waiting for you,kamu orang yang baik bahkan kadang terlalu baik tapi kalo misal kamu punya hal yang ngeganjel kamu,kamu bisa ngomong sama i,ik it look weird and some shi but if you kind to me then i also wan to be kind to you,be just the way you are,ya intinya hbd!!</b>
+  
   </div>
+</div>
+
+          </div>
+          
+          </div>
+
+     <div class="service" id="character">
+      <div class="container" style="padding-bottom: 40px;">
+        <div class="row">
+          <div class="col mt-5">
+            <h2 style="text-align: center;">Characters That Remind Me Of You</h2>
+            <hr />
+          </div>
+        <div class="row row-cols-lg-2 row-cols-1">
+          <div class="col" style="align-items: center; justify-content: center; margin: auto; display: flex;">
+            
+            <img src="hakuji_koyuki.jpg" class="mt-5" style="align-items: center; justify-content: center; margin: auto; display: flex;" height="500px" width="500px">
+          </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     
+    </div>
+    
+
+      
+    <!-- Bootstrap 5 (terbaru) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="dist/js/script.js"></script>
+
+    
 </body>
 </html>
